@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+  <head>
+    <style>
+        @page {
+            height: 5in;
+            width: 2in;
+			      margin: 0in 0in 0in;
+        }
+        img {
+            width: 40%;
+            height: 40%;
+            object-fit: contain;
+        }
+        .textMain {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', sans-serif;
+            font-weight:bold;
+            font-size:14px;
+            word-wrap: break-word;
+        }
+        .textSmall {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', serif;
+            font-size:12px;
+            word-wrap: break-word;
+        }
+        hr {
+          margin-left: auto;
+          margin-right: auto;
+          border:1px dashed;
+        }
+    </style>
+  </head>
+  <body width="2px" height="100%">
+    <span class="textSmall">
+        <!-- <img src="images/turtle.png"/> -->
+        <hr>
+        <b>Magic Post Office</b><br>
+        <b>F:</b> {{ result["sender"] }}<br>
+        <b>Sub:</b> {{ result["subject"] }}<br>
+        <b>Sent:</b> {{ now }}<br>
+        <hr>
+        <b><u>MESSAGE:</u></b><br><br>
+    </span>
+    <span class="textMain">
+        {{ result["message"] }}<br><br>
+        <img src="images/turtle.png"/>
+    </span>
+  </body>
+</html>

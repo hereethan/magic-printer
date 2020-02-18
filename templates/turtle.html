@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+  <head>
+    <style>
+        @page {
+            height: 5in;
+            width: 2in;
+			      margin: 0in 0in 0in;
+        }
+        img {
+            width: 30%;
+            height: 30%;
+            object-fit: contain;
+        }
+        .textMain {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', sans-serif;
+            font-weight:bold;
+            font-size:14px;
+            word-wrap: break-word;
+        }
+        .textSmall {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', serif;
+            font-size:12px;
+            word-wrap: break-word;
+        }
+        .textHeader {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', sans-serif;
+            font-weight:bold;
+            font-size:18px;
+            word-wrap: break-word;
+            text-align: center;
+            font-style: italic;
+        }
+
+        hr {
+          margin-left: auto;
+          margin-right: auto;
+          border:1px solid;
+        }
+    </style>
+  </head>
+  <body width="2px" height="100%">
+    <span class="textSmall">
+        <hr>
+        <center><b>Turtle Digest</b></center>
+				<hr>
+    </span>
+          <span class="textMain"><center>
+					<br>
+					{{ turtleFact }}</center>
+        </span>
+  </body>
+</html>

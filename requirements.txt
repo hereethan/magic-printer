@@ -1,0 +1,9 @@
+Flask
+gunicorn
+Flask-mail
+weasyprint
+darksky
+darkskylib
+requests
+APScheduler==3.0.0
+flask_basicauth

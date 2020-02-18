@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+  <head>
+    <style>
+        @page {
+            height: 5in;
+            width: 2in;
+			      margin: 0in 0in 0in;
+        }
+        img {
+            width: 30%;
+            height: 30%;
+            object-fit: contain;
+        }
+        .textMain {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', sans-serif;
+            font-weight:bold;
+            font-size:14px;
+            word-wrap: break-word;
+        }
+        .textSmall {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', serif;
+            font-size:12px;
+            word-wrap: break-word;
+        }
+        .textHeader {
+            -webkit-font-smoothing: antialiased;
+            font-family: 'arial', sans-serif;
+            font-weight:bold;
+            font-size:18px;
+            word-wrap: break-word;
+            text-align: center;
+            font-style: italic;
+        }
+
+        hr {
+          margin-left: auto;
+          margin-right: auto;
+          border:1px solid;
+        }
+    </style>
+  </head>
+  <body width="2px" height="100%">
+    <br>
+    <span class="textSmall">
+        <hr>
+        <center><b>Magic Post Box</b></center>
+				<hr>
+    </span>
+          <span class="textHeader"><center>
+						Today's Weather<br>
+            <hr style="width:25%;border:1px dashed">
+            </center>
+          </span>
+          <span class="textMain"><center>
+					<img src = "{{ weather_icon }}" width="25%" height="25%">
+					<br>
+					{{ weather }}<br><br></center>
+        </span>
+          <hr>
+          <span class="textHeader">
+          <center>Joke of the Day</center></span>
+          <hr style="width:25%;border:1px dashed">
+          <span class="textMain"><center>
+          <br>
+          {{ joke_msg }}</center></span>
+  </body>
+</html>
